@@ -10,10 +10,26 @@ html {
 
 body {
 	margin: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 main {
 	margin: 20px;
+	margin-bottom: 0;
+	padding-bottom: 40px;
+	position: relative;
+}
+
+main:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	border: 0.5px solid;
+	top: -15px;
+	right: -15px;
+	left: -15px;
+	bottom: -15px;
 }
 
 img {
@@ -21,7 +37,7 @@ img {
 }
 
 h1 {
-	margin: 10vh auto;
+	margin: 7vh auto 7vh;
 	font-size: 1.2em;
 }
 
@@ -48,6 +64,16 @@ h3 {
 
 h2 {
 	font-size: 30px;
+	display: flex;
+	flex-direction: row;
+}
+
+h2:before,
+h2:after {
+	content: '';
+	flex-grow: 1;
+	border-bottom: 0.5px solid;
+	margin: 0 20px 1.2ex;
 }
 
 p,
@@ -97,6 +123,7 @@ footer.fregante {
 }
 
 footer {
-	background-color: #000b0f;
+	background-color: #00151c;
 	padding: 1px 20px;
+	border-top: 0.5px solid;
 }
