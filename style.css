@@ -1,0 +1,102 @@
+html {
+	overflow-y: auto;
+	min-width: 320px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	background: linear-gradient(to bottom, #00151c, #002735) #00151c;
+	color: white;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	margin: 20px;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	margin: 10vh auto;
+	font-size: 1.2em;
+}
+
+h1 img {
+	width: 320px;
+	display: block;
+	margin: auto;
+}
+
+h2,
+h3,
+ul,
+p,
+table {
+	margin: 24px 0;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 300;
+	font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+p,
+table {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+	padding-left: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+li {
+	display: flex;
+	flex-direction: column;
+}
+
+li a {
+	display: block;
+}
+
+li img {
+	margin: 0.5em;
+}
+
+/* Optical adjustment for square icon */
+li img[alt='Safari'] {
+	margin-left: 0.7em;
+	margin-right: 0.7em;
+}
+
+a {
+	color: inherit;
+}
+
+.d-inline-block {
+	display: inline-block;
+}
+
+footer.fregante {
+	background: #2c5700;
+}
+
+footer {
+	background-color: #000b0f;
+	padding: 1px 20px;
+}
