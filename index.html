@@ -4,10 +4,10 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
-		<title>GhostText 👻 Use your text editor in the browser</title>
+		<link rel="stylesheet" href="/style.css">
+		<title>👻 GhostText — Use your text editor in the browser</title>
 	</head>
-	<body>
+	<body class="text-align-center">
 		<main>
 			<h1>
 				<img src="https://raw.githubusercontent.com/fregante/GhostText/main/promo/gt_banner.png" alt="GhostText">
@@ -25,7 +25,7 @@
 
 			<h3 id="browser">Choose your browser</h3>
 
-			<ul>
+			<ul class="apps">
 				<li>
 					<a target="_blank" href="https://chrome.google.com/webstore/detail/refined-github/godiecgffnchndlihlpaajjcplehddca">
 						<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome_128x128.png" width="48" alt="Chrome">
@@ -55,7 +55,7 @@
 
 			<h3 id="editor">Choose your text editor</h3>
 
-			<ul>
+			<ul class="apps">
 				<li>
 					<a target="_blank" href="https://sublime.wbond.net/packages/GhostText">
 						<img src="icons/sublime-text.svg" alt="Sublime Text" width="48" height="48">
@@ -99,7 +99,15 @@
 
 			<p>Once you install both extensions, you can activate GhostText in the current browser tab by clicking its icon in the toolbar or by using a <a href="#keyboard-shortcuts">keyboard shortcut</a>. The editor will need to be already open.</p>
 
-			<p>Visit <a href="https://github.com/fregante/GhostText">GhostText’s repo</a> to find out how it works and more.</p>
+			<p>Notice: in some editors you’ll need to run the <em>Enable GhostText</em> command to start the server. Refer to the documentation of your editor’s GhostText extension. Sublime Text doesn’t need this step.</p>
+
+			<h2 id="how-it-works">How it works</h2>
+			<p>GhostText is split in two parts:</p>
+			<ol>
+				<li>a HTTP and WebSocket server in the text editor</li>
+				<li>a client in the browser</li>
+			</ol>
+			<p>When you activate GhostText with a click, the browser will try contacting the server in the text editor (at the port specified in the options) and open a WebSocket connection. Every change will be transmitted to the other side. Each side can close the socket (for example by closing the window) and the session will be automatically over.</p>
 
 			<h2 id="keyboard-shortcuts">Keyboard shortcuts</h2>
 
@@ -107,22 +115,26 @@
 
 			<table>
 				<tr>
-					<th>OS</th>
-					<th>Shortcut</th>
-				</tr>
-				<tr>
-					<th>Windows</td>
+					<th>Windows</th>
 					<td><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>K</kbd></td>
 				</tr>
 				<tr>
-					<th>Linux</td>
+					<th>Linux</th>
 					<td><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>H</kbd></td>
 				</tr>
 				<tr>
-					<th>Mac</td>
+					<th>Mac</th>
 					<td><kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>K</kbd></td>
 				</tr>
 			</table>
+
+			<h2 id="installation">More</h2>
+
+			<p>
+				<a href="https://github.com/fregante/GhostText">GhostText on GitHub</a>
+				—
+				<a href="/troubleshooting/">Troubleshooting</a>
+			</p>
 		</main>
 		<footer>
 			<p>Editor extensions developed by third parties. Original proof of concept by Guido Krömer. App logos belong to their respective owners. <br><a href="https://github.com/fregante/GhostText">Code</a> released under MIT license. <a href="https://github.com/fregante/ghosttext.fregante.com/blob/main/index.html">Edit this page on GitHub</a></p>

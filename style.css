@@ -1,7 +1,6 @@
 html {
 	overflow-y: auto;
 	min-width: 320px;
-	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.5;
 	background: linear-gradient(to bottom, #00151c, #002735) #00151c;
@@ -39,6 +38,7 @@ img {
 h1 {
 	margin: 7vh auto 7vh;
 	font-size: 1.2em;
+	text-align: center;
 }
 
 h1 img {
@@ -47,12 +47,26 @@ h1 img {
 	margin: auto;
 }
 
+h1 a {
+	text-decoration: none;
+}
+
 h2,
 h3,
 ul,
 p,
 table {
 	margin: 24px 0;
+}
+
+h3,
+ul,
+p,
+table,
+textarea {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h1,
@@ -76,36 +90,59 @@ h2:after {
 	margin: 0 20px 1.2ex;
 }
 
-p,
-table {
-	max-width: 500px;
-	margin-left: auto;
-	margin-right: auto;
+textarea {
+	display: block;
+	border: solid 3px silver;
+	border-radius: 4px;
+	width: 100%;
+	max-width: 300px;
+	padding: 0.7em;
+}
+
+ol {
+	list-style: none;
+	padding-left: 0;
 }
 
 ul {
+	list-style: none;
+	padding-left: 3.5em;
+}
+
+ul li::before {
+	content: '→ ';
+	position: absolute;
+	margin-left: -1.5em;
+}
+
+.apps {
 	padding-left: 0;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	list-style: none;
 }
 
-li {
+.apps li {
 	display: flex;
 	flex-direction: column;
 }
 
-li a {
+.apps li:before {
+	content: none;
+}
+
+.apps li a {
 	display: block;
 }
 
-li img {
+.apps li img {
 	margin: 0.5em;
 }
 
 /* Optical adjustment for square icon */
-li img[alt='Safari'] {
+.apps li img[alt='Safari'] {
 	margin-left: 0.7em;
 	margin-right: 0.7em;
 }
@@ -118,12 +155,18 @@ a {
 	display: inline-block;
 }
 
-footer.fregante {
-	background: #2c5700;
+.text-align-center {
+	text-align: center;
 }
 
 footer {
 	background-color: #00151c;
 	padding: 1px 20px;
 	border-top: 0.5px solid;
+}
+
+footer.fregante {
+	background: #2c5700;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
