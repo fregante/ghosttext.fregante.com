@@ -33,6 +33,7 @@ main:before {
 
 img {
 	max-width: 100%;
+	height: auto;
 }
 
 h1 {
@@ -155,6 +156,7 @@ a {
 	display: inline-block;
 }
 
+[data-style="centered"],
 .text-align-center {
 	text-align: center;
 }

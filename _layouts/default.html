@@ -1,0 +1,37 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/style.css">
+		<title>{{ page.title }}</title>
+	</head>
+	<body data-style="{{ page.style }}">
+		<main>
+			<h1>
+				<a href="/">
+					<img src="https://raw.githubusercontent.com/fregante/GhostText/main/promo/gt_banner.png" alt="GhostText">
+					<span hidden>•</span>
+					Use your text editor
+					<span class="d-inline-block">in the browser</span>
+				</a>
+			</h1>
+			{{ content }}
+		</main>
+
+		<footer>
+			<p>{{ page.footer }} <a href="https://github.com/fregante/ghosttext.fregante.com/blob/main/{{ page.path }}">Edit this page on GitHub</a></p>
+		</footer>
+
+		<footer class="fregante">
+			<p>
+				GhostText is a project of Federico Brigante<br>
+				<a href="https://twitter.com/fregante">Twitter</a> • <a href="https://github.com/sponsors/fregante">Sponsor</a> • <a href="https://github.com/fregante">GitHub</a> •
+				<a href="mailto:me@fregante.com">Email</a>
+			</p>
+		</footer>
+		{% include github-corner.html %}
+
+	</body>
+</html>

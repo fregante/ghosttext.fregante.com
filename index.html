@@ -1,153 +1,127 @@
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="/style.css">
-		<title>👻 GhostText — Use your text editor in the browser</title>
-	</head>
-	<body class="text-align-center">
-		<main>
-			<h1>
-				<img src="https://raw.githubusercontent.com/fregante/GhostText/main/promo/gt_banner.png" alt="GhostText">
-				<span hidden>•</span>
-				Use your text editor <span class="d-inline-block">in the browser</span>
-			</h1>
+---
+layout: default
+title: 👻 GhostText — Use your text editor in the browser
+style: centered
+footer: |
+  Editor extensions developed by third parties! Original proof of concept by Guido Krömer. App logos belong to their respective owners. <br><a href="https://github.com/fregante/GhostText">Code</a> released under MIT license.
+---
+<img src="demo.gif" alt="GhostText demo screencast" width="458" height="515">
 
-			<img src="demo.gif" alt="GhostText demo screencast">
+<p>Whenever you’re writing more than a little snippet of code anywhere on the web, activate GhostText to open your preferred text editor and enjoy your own development environment.</p>
 
-			<p>Whenever you’re writing more than a little snippet of code anywhere on the web, activate GhostText to open your preferred text editor and enjoy your own development environment.</p>
+<h2 id="installation">Installation</h2>
 
-			<h2 id="installation">Installation</h2>
+<p>GhostText is a browser extension that connects to your editor via its own extension. Install both extensions and, if necessary, start the GhostText server in the editor’s extension.</p>
 
-			<p>GhostText is a browser extension that connects to your editor via its own extension. Install both extensions and, if necessary, start the GhostText server in the editor’s extension.</p>
+<h3 id="browser">Choose your browser</h3>
 
-			<h3 id="browser">Choose your browser</h3>
+<ul class="apps">
+	<li>
+		<a target="_blank" href="https://chrome.google.com/webstore/detail/refined-github/godiecgffnchndlihlpaajjcplehddca">
+			<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome_128x128.png" width="48" alt="Chrome">
+		</a>
+	</li>
+	<li>
+		<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/ghosttext/">
+			<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/firefox/firefox_128x128.png" width="48" alt="Firefox">
+		</a>
+	</li>
+	<li>
+		<a target="_blank" href="https://apps.apple.com/app/ghosttext/id1552641506">
+			<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/safari/safari_128x128.png" width="48" alt="Safari">
+		</a>
+	</li>
+	<li>
+		<a target="_blank" href="https://chrome.google.com/webstore/detail/refined-github/godiecgffnchndlihlpaajjcplehddca">
+			<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge/edge_128x128.png" width="48" alt="Edge">
+		</a>
+	</li>
+	<li>
+		<a target="_blank" href="https://chrome.google.com/webstore/detail/refined-github/godiecgffnchndlihlpaajjcplehddca">
+			<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/opera/opera_128x128.png" width="48" alt="Opera">
+		</a>
+	</li>
+</ul>
 
-			<ul class="apps">
-				<li>
-					<a target="_blank" href="https://chrome.google.com/webstore/detail/refined-github/godiecgffnchndlihlpaajjcplehddca">
-						<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome_128x128.png" width="48" alt="Chrome">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/ghosttext/">
-						<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/firefox/firefox_128x128.png" width="48" alt="Firefox">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://apps.apple.com/app/ghosttext/id1552641506">
-						<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/safari/safari_128x128.png" width="48" alt="Safari">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://chrome.google.com/webstore/detail/refined-github/godiecgffnchndlihlpaajjcplehddca">
-						<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge/edge_128x128.png" width="48" alt="Edge">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://chrome.google.com/webstore/detail/refined-github/godiecgffnchndlihlpaajjcplehddca">
-						<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/opera/opera_128x128.png" width="48" alt="Opera">
-					</a>
-				</li>
-			</ul>
+<h3 id="editor">Choose your text editor</h3>
 
-			<h3 id="editor">Choose your text editor</h3>
+<ul class="apps">
+	<li>
+		<a target="_blank" href="https://sublime.wbond.net/packages/GhostText">
+			<img src="icons/sublime-text.svg" alt="Sublime Text" width="48" height="48">
+		</a>
+	</li>
+	<li>
+		<a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=tokoph.ghosttext">
+			<img src="icons/vscode.svg" alt="VS Code" width="48" height="48">
+		</a>
+	</li>
+	<li>
+		<a target="_blank" href="https://github.com/GhostText/GhostText-for-Atom">
+			<img src="icons/atom.svg" alt="Atom" width="48" height="48">
+		</a>
+	</li>
+	<li>
+		<a target="_blank" href="https://melpa.org/#/atomic-chrome">
+			<img src="icons/emacs.svg" alt="Emacs" width="48" height="48">
+		</a>
+	</li>
+	<li>
+		<a target="_blank" href="https://github.com/raghur/vim-ghost">
+			<img src="icons/vim.svg" alt="Vim" width="48" height="48">
+		</a>
+	</li>
+	<li>
+		<a target="_blank" href="https://github.com/subnut/nvim-ghost.nvim">
+			<img src="icons/neovim.svg" alt="Neovim" width="48" height="48">
+		</a>
+	</li>
+	<li>
+		<a target="_blank" href="https://github.com/fhs/Ghost">
+			<img src="icons/acme.png" alt="Acme" width="48" height="48">
+		</a>
+	</li>
+</ul>
 
-			<ul class="apps">
-				<li>
-					<a target="_blank" href="https://sublime.wbond.net/packages/GhostText">
-						<img src="icons/sublime-text.svg" alt="Sublime Text" width="48" height="48">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=tokoph.ghosttext">
-						<img src="icons/vscode.svg" alt="VS Code" width="48" height="48">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://github.com/GhostText/GhostText-for-Atom">
-						<img src="icons/atom.svg" alt="Atom" width="48" height="48">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://melpa.org/#/atomic-chrome">
-						<img src="icons/emacs.svg" alt="Emacs" width="48" height="48">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://github.com/raghur/vim-ghost">
-						<img src="icons/vim.svg" alt="Vim" width="48" height="48">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://github.com/subnut/nvim-ghost.nvim">
-						<img src="icons/neovim.svg" alt="Neovim" width="48" height="48">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://github.com/fhs/Ghost">
-						<img src="icons/acme.png" alt="Acme" width="48" height="48">
-					</a>
-				</li>
-			</ul>
+<p>Most editor extensions are by third parties. You can create more extensions for your editor! Refer to the <a href="https://github.com/fregante/GhostText/blob/main/PROTOCOL.md">protocol</a> file.</p>
 
-			<p>Most editor extensions are by third parties. You can create more extensions for your editor! Refer to the <a href="https://github.com/fregante/GhostText/blob/main/PROTOCOL.md">protocol</a> file.</p>
+<h2 id="#usage">Usage</h2>
 
-			<h2 id="#usage">Usage</h2>
+<p>Once you install both extensions, you can activate GhostText in the current browser tab by clicking its icon in the toolbar or by using a <a href="#keyboard-shortcuts">keyboard shortcut</a>. The editor will need to be already open.</p>
 
-			<p>Once you install both extensions, you can activate GhostText in the current browser tab by clicking its icon in the toolbar or by using a <a href="#keyboard-shortcuts">keyboard shortcut</a>. The editor will need to be already open.</p>
+<p>Notice: in some editors you’ll need to run the <em>Enable GhostText</em> command to start the server. Refer to the documentation of your editor’s GhostText extension. Sublime Text doesn’t need this step.</p>
 
-			<p>Notice: in some editors you’ll need to run the <em>Enable GhostText</em> command to start the server. Refer to the documentation of your editor’s GhostText extension. Sublime Text doesn’t need this step.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>GhostText is split in two parts:</p>
+<ol>
+	<li>a HTTP and WebSocket server in the text editor</li>
+	<li>a client in the browser</li>
+</ol>
+<p>When you activate GhostText with a click, the browser will try contacting the server in the text editor (at the port specified in the options) and open a WebSocket connection. Every change will be transmitted to the other side. Each side can close the socket (for example by closing the window) and the session will be automatically over.</p>
 
-			<h2 id="how-it-works">How it works</h2>
-			<p>GhostText is split in two parts:</p>
-			<ol>
-				<li>a HTTP and WebSocket server in the text editor</li>
-				<li>a client in the browser</li>
-			</ol>
-			<p>When you activate GhostText with a click, the browser will try contacting the server in the text editor (at the port specified in the options) and open a WebSocket connection. Every change will be transmitted to the other side. Each side can close the socket (for example by closing the window) and the session will be automatically over.</p>
+<h2 id="keyboard-shortcuts">Keyboard shortcuts</h2>
 
-			<h2 id="keyboard-shortcuts">Keyboard shortcuts</h2>
+<p>These are the default shortcuts, they can be <a href="http://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121">customized in Chrome</a> and <a href="https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox">Firefox</a>, but not yet in Safari.</p>
 
-			<p>These are the default shortcuts, they can be <a href="http://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121">customized in Chrome</a> and <a href="https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox">Firefox</a>, but not yet in Safari.</p>
+<table>
+	<tr>
+		<th>Windows</th>
+		<td><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>K</kbd></td>
+	</tr>
+	<tr>
+		<th>Linux</th>
+		<td><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>H</kbd></td>
+	</tr>
+	<tr>
+		<th>Mac</th>
+		<td><kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>K</kbd></td>
+	</tr>
+</table>
 
-			<table>
-				<tr>
-					<th>Windows</th>
-					<td><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>K</kbd></td>
-				</tr>
-				<tr>
-					<th>Linux</th>
-					<td><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>H</kbd></td>
-				</tr>
-				<tr>
-					<th>Mac</th>
-					<td><kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>K</kbd></td>
-				</tr>
-			</table>
+<h2 id="installation">More</h2>
 
-			<h2 id="installation">More</h2>
-
-			<p>
-				<a href="https://github.com/fregante/GhostText">GhostText on GitHub</a>
-				—
-				<a href="/troubleshooting/">Troubleshooting</a>
-			</p>
-		</main>
-		<footer>
-			<p>Editor extensions developed by third parties. Original proof of concept by Guido Krömer. App logos belong to their respective owners. <br><a href="https://github.com/fregante/GhostText">Code</a> released under MIT license. <a href="https://github.com/fregante/ghosttext.fregante.com/blob/main/index.html">Edit this page on GitHub</a></p>
-		</footer>
-
-		<footer class="fregante">
-			<p>
-				GhostText is a project of Federico Brigante<br>
-				<a href="https://twitter.com/fregante">Twitter</a> • <a href="https://github.com/sponsors/fregante">Sponsor</a> • <a href="https://github.com/fregante">GitHub</a> • <a href="mailto:me@fregante.com">Email</a>
-			</p>
-		</footer>
-
-		<!-- Thanks Tim! https://tholman.com/github-corners/ -->
-		<a href="https://github.com/fregante/GhostText" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#01161d; position: absolute; top: 5px; border: 0; right: 5px;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-	</body>
-</html>
+<p>
+	<a href="https://github.com/fregante/GhostText">GhostText on GitHub</a>
+	—
+	<a href="/troubleshooting/">Troubleshooting</a>
+</p>
