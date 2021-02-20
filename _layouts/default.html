@@ -2,8 +2,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
+		<meta property="og:image" content="https://raw.githubusercontent.com/fregante/GhostText/main/promo/demo-screen.png">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+		<!-- https://css-tricks.com/the-fastest-google-fonts/ -->
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" as="style">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" media="print" onload="this.media='all'">
 		<link rel="stylesheet" href="/style.css">
 		<title>{{ page.title }}</title>
 	</head>
@@ -11,7 +14,7 @@
 		<main>
 			<h1>
 				<a href="/">
-					<img src="https://raw.githubusercontent.com/fregante/GhostText/main/promo/gt_banner.png" alt="GhostText">
+					<img src="https://raw.githubusercontent.com/fregante/GhostText/main/promo/gt_banner.png" alt="GhostText" width="936" height="266">
 					<span hidden>•</span>
 					Use your text editor
 					<span class="d-inline-block">in the browser</span>
