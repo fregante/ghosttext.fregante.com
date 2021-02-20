@@ -4,7 +4,9 @@
 		<meta name="viewport" content="width=device-width">
 		<meta property="og:image" content="https://raw.githubusercontent.com/fregante/GhostText/main/promo/demo-screen.png">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap">
+		<!-- https://css-tricks.com/the-fastest-google-fonts/ -->
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" as="style">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" media="print" onload="this.media='all'">
 		<link rel="stylesheet" href="/style.css">
 		<title>{{ page.title }}</title>
 	</head>
