@@ -160,6 +160,7 @@ a {
 }
 
 footer {
+	text-align: center;
 	background-color: #00151c;
 	padding: 1px 20px;
 	border-top: 0.5px solid;
