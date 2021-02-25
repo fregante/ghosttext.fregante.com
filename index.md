@@ -16,73 +16,11 @@ GhostText is a browser extension that connects to your editor via its own extens
 
 <h3 id="browser">Choose your browser</h3>
 
-<ul class="apps">
-	<li>
-		<a target="_blank" href="https://chrome.google.com/webstore/detail/refined-github/godiecgffnchndlihlpaajjcplehddca">
-			<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome_128x128.png" width="48" height="48" alt="Chrome" />
-		</a>
-	</li>
-	<li>
-		<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/ghosttext/">
-			<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/firefox/firefox_128x128.png" width="48" height="48" alt="Firefox" />
-		</a>
-	</li>
-	<li>
-		<a target="_blank" href="https://apps.apple.com/app/ghosttext/id1552641506">
-			<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/safari/safari_128x128.png" width="48" height="48" alt="Safari" />
-		</a>
-	</li>
-	<li>
-		<a target="_blank" href="https://chrome.google.com/webstore/detail/refined-github/godiecgffnchndlihlpaajjcplehddca">
-			<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge/edge_128x128.png" width="48" height="48" alt="Edge" />
-		</a>
-	</li>
-	<li>
-		<a target="_blank" href="https://chrome.google.com/webstore/detail/refined-github/godiecgffnchndlihlpaajjcplehddca">
-			<img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/opera/opera_128x128.png" width="48" height="48" alt="Opera" />
-		</a>
-	</li>
-</ul>
+{% include browsers.html %}
 
 <h3 id="editor">Choose your text editor</h3>
 
-<ul class="apps">
-	<li>
-		<a target="_blank" href="https://sublime.wbond.net/packages/GhostText">
-			<img src="/icons/sublime-text.svg" alt="Sublime Text" width="48" height="48" />
-		</a>
-	</li>
-	<li>
-		<a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=tokoph.ghosttext">
-			<img src="/icons/vscode.svg" alt="VS Code" width="48" height="48" />
-		</a>
-	</li>
-	<li>
-		<a target="_blank" href="https://github.com/GhostText/GhostText-for-Atom">
-			<img src="/icons/atom.svg" alt="Atom" width="48" height="48" />
-		</a>
-	</li>
-	<li>
-		<a target="_blank" href="https://melpa.org/#/atomic-chrome">
-			<img src="/icons/emacs.svg" alt="Emacs" width="48" height="48" />
-		</a>
-	</li>
-	<li>
-		<a target="_blank" href="https://github.com/raghur/vim-ghost">
-			<img src="/icons/vim.svg" alt="Vim" width="48" height="48" />
-		</a>
-	</li>
-	<li>
-		<a target="_blank" href="https://github.com/subnut/nvim-ghost.nvim">
-			<img src="/icons/neovim.svg" alt="Neovim" width="48" height="48" />
-		</a>
-	</li>
-	<li>
-		<a target="_blank" href="https://github.com/fhs/Ghost">
-			<img src="/icons/acme.png" alt="Acme" width="48" height="48" />
-		</a>
-	</li>
-</ul>
+{% include editors.html %}
 
 Most editor extensions are by third parties. You can create more extensions for your editor! Refer to the [protocol](https://github.com/fregante/GhostText/blob/main/PROTOCOL.md) file.
 
