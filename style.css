@@ -14,8 +14,8 @@ body {
 	background: radial-gradient(
 		ellipse 400px 100px at 50% 100px,
 		rgba(100%, 100%, 100%, 13%),
-		rgba(100%, 100%, 100%, 4%), /* Smoother gradient */
-		rgba(100%, 100%, 100%, 0%)
+		rgba(100%, 100%, 100%, 4%),
+		/* Smoother gradient */ rgba(100%, 100%, 100%, 0%)
 	);
 }
 
@@ -162,7 +162,7 @@ a {
 	display: inline-block;
 }
 
-[data-style="centered"],
+[data-style='centered'],
 .text-align-center {
 	text-align: center;
 }

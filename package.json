@@ -1,0 +1,14 @@
+{
+	"private": "true",
+	"scripts": {
+		"build": "npx prettier . --write"
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"bracketSpacing": false,
+		"printWidth": 150,
+		"proseWrap": "never",
+		"singleQuote": true,
+		"useTabs": true
+	}
+}

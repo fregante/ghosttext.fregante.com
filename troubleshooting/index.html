@@ -2,10 +2,11 @@
 layout: default
 title: Troubleshooting GhostText 👻
 ---
+
 <h2>Troubleshooting</h2>
 
 <p class="text-align-center">
-	Is GhostText correctly configured? <br>
+	Is GhostText correctly configured? <br />
 	Try activating it on this page, it should pick up this field:
 </p>
 <textarea rows="10">
@@ -43,6 +44,10 @@ function registerElements() {
 	<li>Its GhostText extension is installed; Install it from the <a href="/#installation">list of supported editors</a> if you haven’t already.</li>
 	<li>The GhostText server is running; In most editor extensions this is started automatically.</li>
 	<li>The server port matches; It’s 4001 by default, it can be changed in the options.</li>
-	<li>There are no other servers using the port. For example what happens when you open <a href="http://localhost:4001" target="_blank"><code>http://localhost:4001</code></a>? The page should return details about WebSocket and the editor should start a new connection.</li>
+	<li>
+		There are no other servers using the port. For example what happens when you open
+		<a href="http://localhost:4001" target="_blank"><code>http://localhost:4001</code></a
+		>? The page should return details about WebSocket and the editor should start a new connection.
+	</li>
 </ul>
 <p>If it still doesn’t work, try again in <a href="https://www.sublimetext.com">Sublime Text</a>, it’s the main supported editor of GhostText.</p>
