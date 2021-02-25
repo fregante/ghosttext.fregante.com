@@ -22,6 +22,8 @@ function registerElements() {
 }
 </textarea>
 
+<p class="text-align-center">There's also a <a href="/test/">testing page</a> with more fields.</p>
+
 ## Errors
 
 <h3 id="no-supported-fields">No supported fields found</h3>
