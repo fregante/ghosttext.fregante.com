@@ -14,9 +14,12 @@ body {
 	background: radial-gradient(
 		ellipse 400px 100px at 50% 100px,
 		rgba(100%, 100%, 100%, 13%),
-		rgba(100%, 100%, 100%, 4%), /* Smoother gradient */
-		rgba(100%, 100%, 100%, 0%)
+		rgba(100%, 100%, 100%, 4%),
+		/* Smoother gradient */ rgba(100%, 100%, 100%, 0%)
 	);
+
+	border: 0.5px solid;
+	border-bottom: none;
 }
 
 main {
@@ -24,17 +27,19 @@ main {
 	margin-bottom: 0;
 	padding-bottom: 40px;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
-main:before {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	border: 0.5px solid;
-	top: -15px;
-	right: -15px;
-	left: -15px;
-	bottom: -15px;
+main > * {
+	margin: 24px 0;
+}
+
+main > :not(h2),
+footer > * {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 img {
@@ -56,24 +61,6 @@ h1 img {
 
 h1 a {
 	text-decoration: none;
-}
-
-h2,
-h3,
-ul,
-p,
-table {
-	margin: 24px 0;
-}
-
-h3,
-ul,
-p,
-table,
-textarea {
-	max-width: 500px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 h1,
@@ -176,12 +163,13 @@ a {
 footer {
 	text-align: center;
 	background-color: #00151c;
+	color: rgba(100%, 100%, 100%, 80%);
 	padding: 1px 20px;
-	border-top: 0.5px solid;
 }
 
 footer.fregante {
 	background: #2c5700;
+	color: white;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
