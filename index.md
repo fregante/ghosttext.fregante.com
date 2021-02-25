@@ -8,17 +8,11 @@ footer: |
 
 <img src="demo.gif" alt="GhostText demo screencast" width="458" height="515" />
 
-<p>
-	Whenever you’re writing more than a little snippet of code anywhere on the web, activate GhostText to open your preferred text editor and enjoy your
-	own development environment.
-</p>
+Whenever you’re writing more than a little snippet of code anywhere on the web, activate GhostText to open your preferred text editor and enjoy your own development environment.
 
-<h2 id="installation">Installation</h2>
+## Installation
 
-<p>
-	GhostText is a browser extension that connects to your editor via its own extension. Install both extensions and, if necessary, start the GhostText
-	server in the editor’s extension.
-</p>
+GhostText is a browser extension that connects to your editor via its own extension. Install both extensions and, if necessary, start the GhostText server in the editor’s extension.
 
 <h3 id="browser">Choose your browser</h3>
 
@@ -90,42 +84,26 @@ footer: |
 	</li>
 </ul>
 
-<p>
-	Most editor extensions are by third parties. You can create more extensions for your editor! Refer to the
-	<a href="https://github.com/fregante/GhostText/blob/main/PROTOCOL.md">protocol</a> file.
-</p>
+Most editor extensions are by third parties. You can create more extensions for your editor! Refer to the [protocol](https://github.com/fregante/GhostText/blob/main/PROTOCOL.md) file.
 
-<h2 id="#usage">Usage</h2>
+## Usage
 
-<p>
-	Once you install both extensions, you can activate GhostText in the current browser tab by clicking its icon in the toolbar or by using a
-	<a href="#keyboard-shortcuts">keyboard shortcut</a>. The editor will need to be already open.
-</p>
+Once you install both extensions, you can activate GhostText in the current browser tab by clicking its icon in the toolbar or by using a [keyboard shortcut](#keyboard-shortcuts). The editor will need to be already open.
 
-<p>
-	Notice: in some editors you’ll need to run the <em>Enable GhostText</em> command to start the server. Refer to the documentation of your editor’s
-	GhostText extension. Sublime Text doesn’t need this step.
-</p>
+Notice: in some editors you’ll need to run the _Enable GhostText_ command to start the server. Refer to the documentation of your editor’s GhostText extension. Sublime Text doesn’t need this step.
 
-<h2 id="how-it-works">How it works</h2>
-<p>GhostText is split in two parts:</p>
-<ol>
-	<li>a HTTP and WebSocket server in the text editor</li>
-	<li>a client in the browser</li>
-</ol>
-<p>
-	When you activate GhostText with a click, the browser will try contacting the server in the text editor (at the port specified in the options) and
-	open a WebSocket connection. Every change will be transmitted to the other side. Each side can close the socket (for example by closing the window)
-	and the session will be automatically over.
-</p>
+## How it works
 
-<h2 id="keyboard-shortcuts">Keyboard shortcuts</h2>
+GhostText is split in two parts:
 
-<p>
-	These are the default shortcuts, they can be
-	<a href="http://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121">customized in Chrome</a> and
-	<a href="https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox">Firefox</a>, but not yet in Safari.
-</p>
+1. a HTTP and WebSocket server in the text editor
+2. a client in the browser
+
+When you activate GhostText with a click, the browser will try contacting the server in the text editor (at the port specified in the options) and open a WebSocket connection. Every change will be transmitted to the other side. Each side can close the socket (for example by closing the window) and the session will be automatically over.
+
+## Keyboard shortcuts
+
+These are the default shortcuts, they can be [customized in Chrome](https://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121) and [Firefox](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox), but not yet in Safari.
 
 <table>
 	<tr>
@@ -142,10 +120,6 @@ footer: |
 	</tr>
 </table>
 
-<h2>More</h2>
+## More
 
-<p>
-	<a href="https://github.com/fregante/GhostText">GhostText on GitHub</a>
-	—
-	<a href="/troubleshooting/">Troubleshooting</a>
-</p>
+[GhostText on GitHub](https://github.com/fregante/GhostText) — [Troubleshooting](/troubleshooting/)

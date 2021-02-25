@@ -4,9 +4,9 @@ title: Welcome to GhostText 👻
 style: centered
 ---
 
-<h2>Welcome to GhostText</h2>
+## Welcome to GhostText
 
-<p>Make sure to install the GhostText extension in your editor as well, pick one among the ones supported:</p>
+Make sure to install the GhostText extension in your editor as well, pick one among the ones supported:
 
 <ul class="apps">
 	<li>
@@ -46,23 +46,14 @@ style: centered
 	</li>
 </ul>
 
-<p>
-	Most editor extensions are by third parties. You can create more extensions for your editor! Refer to the
-	<a href="https://github.com/fregante/GhostText/blob/main/PROTOCOL.md">protocol</a> file.
-</p>
+Most editor extensions are by third parties. You can create more extensions for your editor! Refer to the [protocol](https://github.com/fregante/GhostText/blob/main/PROTOCOL.md) file.
 
-<h2 id="#usage">Usage</h2>
+## Usage
 
-<p>
-	Once you install both extensions, you can activate GhostText in the current browser tab by clicking its icon in the toolbar or by using a
-	<a href="#keyboard-shortcuts">keyboard shortcut</a>. The editor will need to be already open.
-</p>
+Once you install both extensions, you can activate GhostText in the current browser tab by clicking its icon in the toolbar or by using a [keyboard shortcut](#keyboard-shortcuts). The editor will need to be already open.
 
-<p>
-	Notice: in some editors you’ll need to run the <em>Enable GhostText</em> command to start the server. Refer to the documentation of your editor’s
-	GhostText extension. Sublime Text doesn’t need this step.
-</p>
+Notice: in some editors you’ll need to run the _Enable GhostText_ command to start the server. Refer to the documentation of your editor’s GhostText extension. Sublime Text doesn’t need this step.
 
-<h2>Issues?</h2>
+## Issues?
 
-<p>Try <a href="/troubleshooting/">Troubleshooting</a></p>
+Try [Troubleshooting](/troubleshooting/)
