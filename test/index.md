@@ -43,6 +43,7 @@ title: Testing GhostText 👻
 ## CodeMirror
 
 <!-- prettier-ignore-start -->
+
 <textarea id="codemirror-field" class="field">
 This is a CodeMirror field
 
@@ -50,6 +51,7 @@ This is a CodeMirror field
 
 
 </textarea>
+
 <!-- prettier-ignore-end -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
