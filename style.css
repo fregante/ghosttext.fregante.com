@@ -37,6 +37,7 @@ main > * {
 
 main > :not(h2),
 footer > * {
+	width: 100%;
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
@@ -84,12 +85,16 @@ h2:after {
 	margin: 0 20px 1.2ex;
 }
 
-textarea {
+textarea,
+.field,
+.CodeMirror {
 	display: block;
 	border: solid 3px silver;
 	border-radius: 4px;
-	width: 100%;
-	max-width: 300px;
+	min-height: 100px;
+}
+field textarea {
+	font: inherit;
 	padding: 0.7em;
 }
 
