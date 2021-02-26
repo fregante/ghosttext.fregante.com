@@ -56,8 +56,24 @@ This is a CodeMirror field
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
 <script>
-	window.CodeMirror.fromTextArea(document.getElementById('codemirror-field'), {
+	const cm = window.CodeMirror.fromTextArea(document.getElementById('codemirror-field'), {
 		lineNumbers: true,
+		gutters: ['CodeMirror-linenumbers'],
+	});
+	cm.on('gutterClick', (cm, line) => {
+		const info = cm.getLineHandle(line);
+		if (info.widgets) {
+			info.widgets.map(w => {
+				const node = w.node;
+				w.clear();
+				node.parentNode.removeChild(node);
+			});
+		} else {
+			const msg = document.createElement('textarea');
+			msg.select();
+			msg.setRangeText('This is a textarea as CodeMirror line widget');
+			cm.addLineWidget(line, msg, {coverGutter: false, noHScroll: true});
+		}
 	});
 </script>
 
