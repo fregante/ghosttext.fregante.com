@@ -39,10 +39,10 @@ If you’re seeing this message, the page you’d like to use GhostText on doesn
 
 If you’re seeing this message, the browser extension can’t find the GhostText server running in an editor. Ensure that:
 
-- Your editor is open
-- Its GhostText extension is installed; Install it from the [list of supported editors](/#installation) if you haven’t already.
-- The GhostText server is running; In most editor extensions this is started automatically.
-- The server port matches; It’s 4001 by default, it can be changed in the options.
-- There are no other servers using the port. For example what happens when you open http://localhost:4001? The page should return details about WebSocket and the editor should start a new connection.
+- Your editor is launched
+- GhostText editor extension is installed; install it from the [list of supported editors](/#installation) if you haven’t already.
+- The GhostText server is running; with most editor extensions it is started automatically.
+- The server port matches; it’s 4001 by default, but can be changed in the options.
+- There are no other process occupying the port. For example what happens when you open http://localhost:4001? The page should return details about WebSocket and the editor should start a new connection.
 
 If it still doesn’t work, try again in [Sublime Text](https://www.sublimetext.com), it’s the main supported editor of GhostText.
