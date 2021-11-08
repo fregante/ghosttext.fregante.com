@@ -41,7 +41,7 @@ When you activate GhostText, the browser will try contacting the server in the t
 
 ## Keyboard shortcuts
 
-These are the default shortcuts, they can be [customized in Chrome](https://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121) and [Firefox](https://support.mozilla.org/kb/manage-extension-shortcuts-firefox), but not yet in Safari.
+These are the default shortcuts, they can be customized in [Chrome](https://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121) and [Firefox](https://support.mozilla.org/kb/manage-extension-shortcuts-firefox), but not yet in Safari.
 
 <table>
 	<tr>
