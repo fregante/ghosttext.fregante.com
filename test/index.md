@@ -27,7 +27,7 @@ title: Testing GhostText 👻
 <p class="text-align-center">
 	Is GhostText correctly configured? Try activating it on this page. It can pick up multiple fields at once, just activate it multiple times.
 </p>
-<p class="text-align-center">If it doesn't work, try <a href="/troubleshooting/">Troubleshooting</a></p>
+<p class="text-align-center">If it doesn't work, refer to <a href="/troubleshooting/">Troubleshooting</a>.</p>
 
 ## `<textarea>`
 
