@@ -22,26 +22,26 @@ GhostText is a browser extension that connects to your editor via its own extens
 
 {% include editors.html %}
 
-Most editor extensions are by third parties. You can create more extensions for your editor! Refer to the [protocol](https://github.com/fregante/GhostText/blob/main/PROTOCOL.md) file.
+Most editor extensions are authored by third parties. You can create more extensions for your favorite editor! Refer to [the protocol document](https://github.com/fregante/GhostText/blob/main/PROTOCOL.md).
 
 ## Usage
 
-Once you install both extensions, you can activate GhostText in the current browser tab by clicking its icon in the toolbar or by using a [keyboard shortcut](#keyboard-shortcuts). The editor will need to be already open.
+Once you have installed both browser and editor extensions, you can activate GhostText in the current browser tab by clicking its icon in the toolbar or by using a [keyboard shortcut](#keyboard-shortcuts). The editor needs to be launched first.
 
-Notice: in some editors you’ll need to run the _Enable GhostText_ command to start the server. Refer to the documentation of your editor’s GhostText extension. Sublime Text doesn’t need this step.
+Notice: in some editors you’ll need to run the _Enable GhostText_ command to start the server. Refer to the documentation of each extension. Sublime Text doesn’t need this step.
 
 ## How it works
 
 GhostText is split in two parts:
 
-1. a HTTP and WebSocket server in the text editor
-2. a client in the browser
+1. A HTTP and WebSocket server in the text editor
+2. A client in the browser
 
-When you activate GhostText with a click, the browser will try contacting the server in the text editor (at the port specified in the options) and open a WebSocket connection. Every change will be transmitted to the other side. Each side can close the socket (for example by closing the window) and the session will be automatically over.
+When you activate GhostText, the browser will try contacting the server in the text editor (at the port specified in the options) and open a WebSocket connection. Every change will be transmitted to the other side. Each side can close the socket (for example by closing the window) and the session will be automatically over.
 
 ## Keyboard shortcuts
 
-These are the default shortcuts, they can be [customized in Chrome](https://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121) and [Firefox](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox), but not yet in Safari.
+These are the default shortcuts, they can be customized in [Chrome](https://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121) and [Firefox](https://support.mozilla.org/kb/manage-extension-shortcuts-firefox), but not yet in Safari.
 
 <table>
 	<tr>
