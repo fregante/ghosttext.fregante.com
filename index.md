@@ -34,8 +34,8 @@ Notice: in some editors you’ll need to run the _Enable GhostText_ command to s
 
 GhostText is split in two parts:
 
-• A HTTP and WebSocket server in the text editor  
-• A client in the browser
+1. A HTTP and WebSocket server in the text editor
+2. A client in the browser
 
 When you activate GhostText, the browser will try contacting the server in the text editor (at the port specified in the options) and open a WebSocket connection. Every change will be transmitted to the other side. Each side can close the socket (for example by closing the window) and the session will be automatically over.
 
