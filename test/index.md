@@ -20,6 +20,10 @@ title: Testing GhostText 👻
 		height: 300px;
 		max-width: 80% !important;
 	}
+	#monaco-editor {
+		width: 100%;
+		height: 100%;
+	}
 </style>
 
 ## Testing page
@@ -98,12 +102,28 @@ This is a Ace field
 
 ## Monaco
 
+<script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+<div id="monaco-editor"></div>
+
 <script>
-    require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.21.3/min/vs' }});
-    require(['vs/editor/editor.main'], function() {
-        var editor = monaco.editor.create(document.getElementById('monaco-editor'), {
-            value: '',
-            language: 'javascript'
-        });
-    });
+	require.config({ paths: { 'vs': 'https://unpkg.com/monaco-editor@latest/min/vs' }});
+	window.MonacoEnvironment = { getWorkerUrl: () => proxy };
+
+	let proxy = URL.createObjectURL(new Blob([`
+		self.MonacoEnvironment = {
+			baseUrl: 'https://unpkg.com/monaco-editor@latest/min/'
+		};
+		importScripts('https://unpkg.com/monaco-editor@latest/min/vs/base/worker/workerMain.js');
+	`], { type: 'text/javascript' }));
+
+	require(["vs/editor/editor.main"], function () {
+		let editor = monaco.editor.create(document.getElementById('monaco-editor'), {
+			value: [
+				'function x() {',
+				'\tconsole.log("Hello world!");',
+				'}'
+			].join('\n'),
+			language: 'javascript',
+		});
+	});
 </script>
