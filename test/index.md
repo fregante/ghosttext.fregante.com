@@ -95,3 +95,15 @@ This is a Ace field
 ## Fields inside iframe
 
 <iframe src="." frameborder="0" class="field">One level deep, please!</iframe>
+
+## Monaco
+
+<script>
+    require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.21.3/min/vs' }});
+    require(['vs/editor/editor.main'], function() {
+        var editor = monaco.editor.create(document.getElementById('monaco-editor'), {
+            value: '',
+            language: 'javascript'
+        });
+    });
+</script>
