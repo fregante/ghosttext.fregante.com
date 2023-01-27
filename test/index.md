@@ -101,10 +101,10 @@ This is a Ace field
 <div id="monaco-field" class="field"></div>
 
 <script type="module">
-	window.require = { paths: { 'vs': '[scripts/monaco/vs](https://unpkg.com/monaco-editor@latest/min/vs)' } };
+	window.require = { paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs' } };
 
-	await import('./monaco/vs/loader.js');
-	await import('./monaco/vs/editor/editor.main.nls.js');
+	await import('https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js');
+	await import('https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.nls.js');
 
 	require(["vs/editor/editor.main"], function () {
 		monaco.editor.create(document.getElementById('monaco-editor'), {
