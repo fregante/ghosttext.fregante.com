@@ -6,9 +6,11 @@ title: Testing GhostText 👻
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css" />
 <style>
 	
-	#monaco-field,
 	.CodeMirror {
 		height: 120px;
+	}
+	#monaco-field {
+		height: 130px;
 	}
 	.flex {
 		display: flex;
@@ -96,22 +98,16 @@ This is a Ace field
 
 ## Monaco
 
-<script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
 <div id="monaco-field" class="field"></div>
 
-<script>
-	require.config({ paths: { 'vs': 'https://unpkg.com/monaco-editor@latest/min/vs' }});
-	window.MonacoEnvironment = { getWorkerUrl: () => proxy };
+<script type="module">
+	window.require = { paths: { 'vs': '[scripts/monaco/vs](https://unpkg.com/monaco-editor@latest/min/vs)' } };
 
-	const proxy = URL.createObjectURL(new Blob([`
-		self.MonacoEnvironment = {
-			baseUrl: 'https://unpkg.com/monaco-editor@latest/min/'
-		};
-		importScripts('https://unpkg.com/monaco-editor@latest/min/vs/base/worker/workerMain.js');
-	`], { type: 'text/javascript' }));
+	await import('./monaco/vs/loader.js');
+	await import('./monaco/vs/editor/editor.main.nls.js');
 
 	require(["vs/editor/editor.main"], function () {
-		monaco.editor.create(document.getElementById('monaco-field'), {
+		monaco.editor.create(document.getElementById('monaco-editor'), {
 			value: 'This is a Monaco field',
 			language: 'javascript',
 		});
