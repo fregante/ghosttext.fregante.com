@@ -99,13 +99,10 @@ This is a Ace field
 ## Monaco
 
 <div id="monaco-field" class="field"></div>
-
-<script type="module">
-	window.require = { paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs' } };
-
-	await import('https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js');
-	await import('https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.nls.js');
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.nls.js">
+<script>
+	require.config({paths: {vs: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs'}});
 	require(["vs/editor/editor.main"], function () {
 		monaco.editor.create(document.getElementById('monaco-editor'), {
 			value: 'This is a Monaco field',
