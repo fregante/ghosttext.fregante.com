@@ -105,7 +105,6 @@ This is a Ace field
 	require(["vs/editor/editor.main"], function () {
 		monaco.editor.create(document.getElementById('monaco-field'), {
 			value: 'This is a Monaco field',
-			language: 'javascript',
 		});
 	});
 </script>
