@@ -6,11 +6,9 @@ title: Testing GhostText 👻
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css" />
 <style>
 	
+	#monaco-field,
 	.CodeMirror {
 		height: 120px;
-	}
-	#monaco-field {
-		height: 130px;
 	}
 	.flex {
 		display: flex;
@@ -100,14 +98,13 @@ This is a Ace field
 
 <div id="monaco-field" class="field"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.nls.js"></script>
 <script>
 	require.config({paths: {vs: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs'}});
 	require(["vs/editor/editor.main"], function () {
-		monaco.editor.create(document.getElementById('monaco-field'), {
-			value: 'This is a Monaco field',
-			language: 'javascript',
-		});
+		window.monaco.editor.create(
+			document.getElementById('monaco-field'),
+			{value: 'This is a Monaco field\n\n\n\n\n'},
+		);
 	});
 </script>
 
