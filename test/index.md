@@ -5,6 +5,8 @@ title: Testing GhostText 👻
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css" />
 <style>
+	
+	#monaco-field,
 	.CodeMirror {
 		height: 120px;
 	}
@@ -90,6 +92,20 @@ This is a Ace field
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js"></script>
 <script>
 	window.ace.edit('ace-field').setOption('maxLines', 30);
+</script>
+
+## Monaco
+
+<div id="monaco-field" class="field"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
+<script>
+	require.config({paths: {vs: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs'}});
+	require(["vs/editor/editor.main"], function () {
+		window.monaco.editor.create(
+			document.getElementById('monaco-field'),
+			{value: 'This is a Monaco field\n\n\n\n\n'},
+		);
+	});
 </script>
 
 ## Fields inside iframe
