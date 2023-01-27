@@ -22,10 +22,6 @@ title: Testing GhostText 👻
 		height: 300px;
 		max-width: 80% !important;
 	}
-	#monaco-editor {
-		width: 100%;
-		height: 100%;
-	}
 </style>
 
 ## Testing page
@@ -115,7 +111,7 @@ This is a Ace field
 	`], { type: 'text/javascript' }));
 
 	require(["vs/editor/editor.main"], function () {
-		monaco.editor.create(document.getElementById('monaco-editor'), {
+		monaco.editor.create(document.getElementById('monaco-field'), {
 			value: 'This is a Monaco field',
 			language: 'javascript',
 		});
