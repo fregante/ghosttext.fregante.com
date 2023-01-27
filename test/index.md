@@ -5,8 +5,12 @@ title: Testing GhostText 👻
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css" />
 <style>
+	
 	.CodeMirror {
 		height: 120px;
+	}
+	#monaco-field {
+		height: 130px;
 	}
 	.flex {
 		display: flex;
@@ -19,10 +23,6 @@ title: Testing GhostText 👻
 		opacity: 0.8;
 		height: 300px;
 		max-width: 80% !important;
-	}
-	#monaco-editor {
-		width: 100%;
-		height: 100%;
 	}
 </style>
 
@@ -96,34 +96,21 @@ This is a Ace field
 	window.ace.edit('ace-field').setOption('maxLines', 30);
 </script>
 
-## Fields inside iframe
-
-<iframe src="." frameborder="0" class="field">One level deep, please!</iframe>
-
 ## Monaco
 
-<script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
-<div id="monaco-editor"></div>
-
+<div id="monaco-field" class="field"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.nls.js"></script>
 <script>
-	require.config({ paths: { 'vs': 'https://unpkg.com/monaco-editor@latest/min/vs' }});
-	window.MonacoEnvironment = { getWorkerUrl: () => proxy };
-
-	let proxy = URL.createObjectURL(new Blob([`
-		self.MonacoEnvironment = {
-			baseUrl: 'https://unpkg.com/monaco-editor@latest/min/'
-		};
-		importScripts('https://unpkg.com/monaco-editor@latest/min/vs/base/worker/workerMain.js');
-	`], { type: 'text/javascript' }));
-
+	require.config({paths: {vs: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs'}});
 	require(["vs/editor/editor.main"], function () {
-		let editor = monaco.editor.create(document.getElementById('monaco-editor'), {
-			value: [
-				'function x() {',
-				'\tconsole.log("Hello world!");',
-				'}'
-			].join('\n'),
+		monaco.editor.create(document.getElementById('monaco-field'), {
+			value: 'This is a Monaco field',
 			language: 'javascript',
 		});
 	});
 </script>
+
+## Fields inside iframe
+
+<iframe src="." frameborder="0" class="field">One level deep, please!</iframe>
