@@ -4,7 +4,7 @@ title: Welcome to GhostText 👻
 style: centered
 ---
 
-## Welcome to GhostText
+## Welcome
 
 Make sure to install the GhostText extension in your editor as well, pick one among the ones supported:
 
