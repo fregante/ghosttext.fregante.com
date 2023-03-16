@@ -92,6 +92,7 @@ textarea,
 	border: solid 3px silver;
 	border-radius: 4px;
 	min-height: 100px;
+	background: white;
 }
 field textarea {
 	font: inherit;

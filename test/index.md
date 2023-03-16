@@ -56,7 +56,7 @@ title: Testing GhostText 👻
 	import { basicSetup, EditorView } from "https://deno.land/x/codemirror_esm@v6.0.1/esm/codemirror/dist/index.js"
 
 	new EditorView({
-		doc: "This is a CodeMirror 6 field\n\n\n\n\n\n",
+		doc: "This is a CodeMirror 6 field\n\n\n\n\n",
 		extensions: [basicSetup],
 		parent: document.querySelector('#codemirror-6-field'),
 	})
