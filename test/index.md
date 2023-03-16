@@ -5,22 +5,22 @@ title: Testing GhostText 👻
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css" />
 <style>
-    #monaco-field,
-    .CodeMirror {
-    	height: 120px;
-    }
-    .flex {
-    	display: flex;
-    	justify-content: space-between;
-    }
-    .flex textarea {
-    	width: 49%;
-    }
-    iframe {
-    	opacity: 0.8;
-    	height: 300px;
-    	max-width: 80% !important;
-    }
+	#monaco-field,
+	.CodeMirror {
+		height: 120px;
+	}
+	.flex {
+		display: flex;
+		justify-content: space-between;
+	}
+	.flex textarea {
+		width: 49%;
+	}
+	iframe {
+		opacity: 0.8;
+		height: 300px;
+		max-width: 80% !important;
+	}
 </style>
 
 ## Testing page
