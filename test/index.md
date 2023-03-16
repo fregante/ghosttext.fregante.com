@@ -43,7 +43,7 @@ title: Testing GhostText 👻
 
 ## CodeMirror 6
 
-<div id="codemirror-6-field"></div>
+<div id="codemirror-6-field" class="field"></div>
 
 <script type="importmap">
 	{
@@ -53,12 +53,11 @@ title: Testing GhostText 👻
 	}
 </script>
 <script async type="module">
-	import { basicSetup, EditorView } from "codemirror/codemirror/dist/index.js"
-	import { javascript } from "codemirror/lang-javascript/dist/index.js"
+	import { basicSetup, EditorView } from "https://deno.land/x/codemirror_esm@v6.0.1/esm/codemirror/dist/index.js"
 
 	new EditorView({
-		doc: "This is a CodeMirror 6 field",
-		extensions: [basicSetup, javascript()],
+		doc: "This is a CodeMirror 6 field\n\n\n\n\n\n",
+		extensions: [basicSetup],
 		parent: document.querySelector('#codemirror-6-field'),
 	})
 </script>
