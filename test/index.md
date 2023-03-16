@@ -5,7 +5,6 @@ title: Testing GhostText 👻
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css" />
 <style>
-
     #monaco-field,
     .CodeMirror {
     	height: 120px;
@@ -22,7 +21,6 @@ title: Testing GhostText 👻
     	height: 300px;
     	max-width: 80% !important;
     }
-
 </style>
 
 ## Testing page
