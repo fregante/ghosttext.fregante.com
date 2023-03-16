@@ -5,7 +5,6 @@ title: Testing GhostText 👻
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css" />
 <style>
-	
 	#monaco-field,
 	.CodeMirror {
 		height: 120px;
@@ -42,12 +41,33 @@ title: Testing GhostText 👻
 
 <div contenteditable class="field">This is a <em>contenteditable</em> div</div>
 
-## CodeMirror
+## CodeMirror 6
+
+<div id="codemirror-6-field" class="field"></div>
+
+<script type="importmap">
+	{
+		"imports": {
+			"codemirror/": "https://deno.land/x/codemirror_esm@v6.0.1/esm/"
+		}
+	}
+</script>
+<script async type="module">
+	import { basicSetup, EditorView } from "https://deno.land/x/codemirror_esm@v6.0.1/esm/codemirror/dist/index.js"
+
+	new EditorView({
+		doc: "This is a CodeMirror 6 field\n\n\n\n\n",
+		extensions: [basicSetup],
+		parent: document.querySelector('#codemirror-6-field'),
+	})
+</script>
+
+## CodeMirror 5
 
 <!-- prettier-ignore-start -->
 
 <textarea id="codemirror-field" class="field">
-This is a CodeMirror field
+This is a CodeMirror 5 field
 
 
 
