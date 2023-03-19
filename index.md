@@ -6,7 +6,7 @@ footer: |
   Editor extensions developed by third parties! Original proof of concept by Guido Krömer. App logos belong to their respective owners. <br><a href="https://github.com/fregante/GhostText">Code</a> released under MIT license.
 ---
 
-<video width="549" height="485" autoplay src="https://user-images.githubusercontent.com/1402241/226179308-bdd15f40-a681-4e16-8c4d-6202e5ac253d.mp4" type="video/mp4"></video>
+<video width="549" height="485" autoplay mute src="https://user-images.githubusercontent.com/1402241/226179308-bdd15f40-a681-4e16-8c4d-6202e5ac253d.mp4" type="video/mp4"></video>
 
 Whenever you’re writing more than a little snippet of code anywhere on the web, activate GhostText to open your preferred text editor and enjoy your own development environment.
 
