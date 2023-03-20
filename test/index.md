@@ -128,6 +128,30 @@ This is a Ace field
 	});
 </script>
 
+## Shadow DOM
+
+<div>
+	<template shadowrootmode="open">
+		<textarea>This is a textarea in a Shadow DOM</textarea>
+	</template>
+</div>
+<script>
+	// https://caniuse.com/declarative-shadow-dom
+	// https://developer.chrome.com/en/articles/declarative-shadow-dom/
+	if(!HTMLTemplateElement.prototype.hasOwnProperty('shadowRootMode')) {
+		(function attachShadowRoots(root) {
+		 root.querySelectorAll("template[shadowrootmode]").forEach(template => {
+		   const mode = template.getAttribute("shadowrootmode");
+		   const shadowRoot = template.parentNode.attachShadow({ mode });
+		   shadowRoot.appendChild(template.content);
+		   template.remove();
+		   attachShadowRoots(shadowRoot);
+		 });
+		})(document);
+	}
+</script>
+	
+
 ## Fields inside iframe
 
 <iframe src="." frameborder="0" class="field">One level deep, please!</iframe>
